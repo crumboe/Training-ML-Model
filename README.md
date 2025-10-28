@@ -87,10 +87,11 @@ pip install torch torchvision --index-url https://download.pytorch.org/whl/cu130
 ## Step 2: Opening this document in a live terminal. 
 
 With cmd in the virtual environment and in the folder with this file, run the command :
-
+```python
 python -m notebook
-
+```
 and open up the file when propted with a browser view of the directory. You should now be able to run python commands right in this document.
+
 
 
 
