@@ -6,7 +6,7 @@ Our goal here is to take the pretrained YOLO V11, or other models, which have ro
 
 AI like this is a network, made to mimic what people thought the human brain was 60 years ago. Now we do know that they were incredibly wrong on the neuroscience side, however on the electrical engineering side, this paradigm introduced a new type of computing with the introduction of the perceptron. 
 
-![image.png](attachment:6eced184-bb30-468c-b021-be17e4582488.png)
+![image.png](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgxIM5ebUtSZ06KqB3p1Q3L1s_6pMKr0riYmEoj1-xyuT3kzDBOvxj9K9WJp-koQBvHe8BDtGH-PTjp8Gf9qku1Hj3l4XJbRXPAwRhSL6kHuXgCEy_cL09ri11hCmzRBltxpka1MgJbaARsI8PpijnMwcarTCn68i47xoeMEPKH2ngutLA0XLuYk0erpA/s1640/single%20and%20multi-layer%20perceptron%20image%20combined%202.png)
 
 The Perceptron was the first Neural Network created, and was utilized to identify hand written numbers by reporting 10 outputs. Each output was tied to a digit, such as "5," and could be a number 0 to 1, which represented the probability that "5" or any other digit, was the number on the inputed image. 
 The idea behind the perceptron was to take in each individual input, represented at the input layer, and pass each one on to a hidden layer. Each hidden layer was made of some number of "neurons." Each neuron would sum all the values from the layer before, with each value multiplied by some "weight."
@@ -17,7 +17,7 @@ Neuron_Output = X1*W1 + X2*W2 ... + Xn*Wn
 
 Now this output could be any number, however for us, it is more stable and understandable if we limit these outputs on any neuron to 0 through 1. We use a "sigmoid" function to do this, which is a function defined so that any real number is mapped to 0 through 1.
 
-![image.png](attachment:136305bd-66e7-4b43-b625-8879616e9a28.png)
+![image.png](https://miro.medium.com/v2/resize:fit:1400/1*a04iKNbchayCAJ7-0QlesA.png)
 
 
 ## What does any of this do for us
@@ -85,3 +85,4 @@ With cmd in the virtual environment and in the folder with this file, run the co
 python -m notebook
 
 and open up the file when propted with a browser view of the directory. You should now be able to run python commands right in this document.
+
