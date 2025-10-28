@@ -55,8 +55,11 @@ We will be assuming a few things. For one this document will be originally setup
 
 Python version 3.10 or higher.
 
-NVIDIA CUDA V13.0 -> if you have a different version of cuda, you will need to make sure you find matching packages pythons torch and torchvision librarys. You can install the requirements.txt, then run:
+If using an nvidia gpu for acceleration.
+
+NVIDIA CUDA V13.0 -> if you have a different version of cuda, you will need to make sure you find matching packages pythons torch and torchvision librarys. You can install the requirements.txt, then run each of these to replace pytorch with the cuda available one:
 ```python
+pip uninstall torch torchvision
 pip install torch torchvision --index-url https://download.pytorch.org/whl/cu130
 ```
 where the 130 at the end is for V13.0
@@ -77,7 +80,7 @@ python -m venv env ## do this in specifically cmd, not powershell, and in the fo
 
  python -m pip install -r requirements.txt ## installs all the requirements for this notebook using the 
                                              # predefined list.
-
+pip uninstall torch torchvision
 pip install torch torchvision --index-url https://download.pytorch.org/whl/cu130 ## isntall torch and torchvision with correct versioning
 ```
 
@@ -88,6 +91,7 @@ With cmd in the virtual environment and in the folder with this file, run the co
 python -m notebook
 
 and open up the file when propted with a browser view of the directory. You should now be able to run python commands right in this document.
+
 
 
 
